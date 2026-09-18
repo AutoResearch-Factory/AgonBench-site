@@ -1,9 +1,14 @@
-# Agon Research Benchmarks
+# AgonScientistBench
 
 ## [Open the website](https://autoresearch-factory.github.io/AgonBench-site/)
 
-Public project website for AgonBench and AgonScientistBench. Anyone can view
-the website without a GitHub account.
+Public project website for AgonScientistBench, a benchmark for scientific
+judgment drawn from the Scientist role's real research histories in Agon.
+Anyone can view the website without a GitHub account.
+
+The first edition, being prepared for ICLR submission, includes two-choice
+questions only. An open-response extension is planned for a later release.
+This is a release plan, not a claim of conference acceptance or publication.
 
 This repository contains only the static website and its public assets.
 Research repositories are maintained separately and retain their own access
@@ -22,6 +27,8 @@ the site; no build step or separate deployment branch is needed.
 For a local preview, run `python3 -m http.server 8000 --bind 127.0.0.1` in
 this directory, then visit http://localhost:8000/.
 
-The sample is a shortened illustration adapted from an open-response task.
+The sample is condensed and translated from a two-choice soft-support
+simulation case. See [`examples/soft-support.md`](examples/soft-support.md).
 The results are preliminary case-writer pilot data, not a final leaderboard.
-Agon is the current working name of the suite.
+The public benchmark name is AgonScientistBench. The repository URL remains
+`AgonBench-site` so existing website links continue to work.
