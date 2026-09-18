@@ -18,8 +18,10 @@ permissions.
 
 - `index.html`: page content and figures
 - `style.css`: layout and responsive styling
-- `app.js`: interactive specimen and pilot table
-- `assets/`: fonts, licenses, favicon, and social image
+- `app.js`: three-case explorer, shareable case links, and pilot result filters
+- `assets/`: fonts, licenses, case illustrations, favicon, and social image
+- `examples/`: condensed questions, reference reasoning, and source notes
+- `data/`: downloadable pilot counts and interpretation notes
 
 GitHub Pages publishes the root of `main`. Push changes to `main` to update
 the site; no build step or separate deployment branch is needed.
@@ -27,8 +29,15 @@ the site; no build step or separate deployment branch is needed.
 For a local preview, run `python3 -m http.server 8000 --bind 127.0.0.1` in
 this directory, then visit http://localhost:8000/.
 
-The sample is condensed and translated from a two-choice soft-support
-simulation case. See [`examples/soft-support.md`](examples/soft-support.md).
+Three examples cover [simulator validation](examples/soft-support.md),
+[model capacity](examples/model-capacity.md), and
+[research direction](examples/research-direction.md). Each is condensed from
+a recorded source case; the illustrations are schematics, not experiment results.
+Case URLs such as `#case-capacity` open the relevant example directly.
+
+The pilot table supports both evaluation arms and all three case writers.
+[Download the counts](data/pilot-results.csv) or read the
+[design and interpretation notes](data/README.md).
 The results are preliminary case-writer pilot data, not a final leaderboard.
 The public benchmark name is AgonScientistBench. The repository URL remains
 `AgonBench-site` so existing website links continue to work.
